@@ -16,7 +16,7 @@ config.networks = {};
 
 config.networks.development = {
 	host: "localhost",
-	port: 8545,
+	port: 9545,
 	gas: 4e6,
 	gasPrice: 1,
 	network_id: "*"
@@ -34,8 +34,8 @@ if(mnemonic.length > 0) {
 	config.networks.mainnet = {
 		provider: new HDWalletProvider(mnemonic, "https://mainnet.infura.io/jPkVat66IVKkmtAsy0DJ"),
 		network_id: 1,
-		gas: 4e6,
-		gasPrice: 5e9
+		gas: 2e6,
+		gasPrice: 10e9
 	};
 
 	config.networks["ropsten"] = {
